@@ -17,7 +17,22 @@ body{
     background-color: aqua;
     grid-column: 1 / 2;
     grid-row: 1 / 3;
+    display: grid;
+    grid-template-rows: 1fr 3fr 3fr;    
 }
+
+.sidebar > p{
+    margin: 20px;
+    display: grid;
+    grid-template-columns: 45px 100px;
+    align-items: center;
+}
+
+.sidebar > ul{
+    display: grid;
+    align-items: center;
+}
+
 
 .header{
     display: grid;
@@ -37,4 +52,20 @@ body{
 
 .content{
     background-color: rgb(213, 226, 237);
+}
+
+.icon{
+    height: 35px;
+}
+
+.icon .pp{
+    height: 50px;
+}
+
+li{
+    list-style: none;
+}
+
+ul{
+    padding: 20px;
 }

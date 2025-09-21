@@ -14,7 +14,7 @@ body{
 }
 
 .sidebar{
-    background-color: aqua;
+    background-color: rgba(90, 65, 47, 0.676);
     grid-column: 1 / 2;
     grid-row: 1 / 3;
     display: grid;
@@ -51,7 +51,7 @@ body{
 
 
 .content{
-    background-color: rgb(213, 226, 237);
+    background-color: rgba(195, 190, 187, 0.337);
 }
 
 .icon{
@@ -64,8 +64,82 @@ body{
 
 li{
     list-style: none;
+    display: grid;
+    grid-template-columns: 45px 100px;
+    align-items: center;
 }
 
 ul{
     padding: 20px;
+}
+
+.header-1{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 5fr 2fr;
+}
+
+.search, .profil{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 7fr;
+    align-items: center;
+}
+
+#search-tab{
+    width: 70%;
+}
+.search > img.icon{
+    justify-self: end;
+}
+
+.header-2{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 5fr 2fr;
+}
+
+.profil{
+    padding-left: 32px;
+}
+
+img.icon.pp{
+    justify-self: end;
+    padding: 15px;
+    width: 75px;         /* largeur fixe */
+    height: 75px;        /* hauteur fixe */
+    border-radius: 50%;   /* cercle parfait */
+    object-fit: cover;    /* évite la déformation */
+}
+
+.buttons{
+    align-self: center;
+}
+
+.info > p > img.icon{
+    width: 35px;         /* largeur fixe */
+    height: 35px;        /* hauteur fixe */
+    border-radius: 50%;   /* cercle parfait */
+    object-fit: cover;    /* évite la déformation */
+}
+
+.info > p{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(3, 55px);
+    gap: 10px;
+    align-items: center;
+}
+
+.content{
+    display: grid;
+}
+
+.main{
+    display: grid;
+    gap: 32px;
+}
+
+.card{
+    border: 1px solid black;
 }

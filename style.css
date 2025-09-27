@@ -114,6 +114,10 @@ img.icon.pp{
 
 .buttons{
     align-self: center;
+     display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    gap: 8px;
 }
 
 .info{
@@ -233,6 +237,8 @@ img.icon.pp{
 }
 
 ul.grp-2{
+    display: grid;
+    grid-template-rows: repeat(3, 70px);
     align-items: start;
 }
 
@@ -246,4 +252,12 @@ button{
 
 button:hover{
     background-color: #916a30cf;
+}
+
+.search-tab{
+    background-color: rgb(233, 233, 234);
+    border-radius: 15px;
+    height: 30px;
+    border-color: rgb(105, 105, 105);
+    border-style: none;
 }
